@@ -27,7 +27,7 @@ class _MyLocationState extends State<MyLocation> {
   void initState() {
     // TODO: implement initState
     timer = Timer.periodic(Duration(seconds: 1), (Timer t) {
-      if (_myLat.isNotEmpty || _myLon.isNotEmpty) {
+      if (_myLat != null || _myLon != null) {
         t.cancel();
         // set state to refresh the page once location has been found
         setState(() {});

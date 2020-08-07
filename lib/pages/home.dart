@@ -72,6 +72,38 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
+          //! this is for testing
+          // Positioned(
+          //   bottom: 105,
+          //   child: Center(
+          //     child: Container(
+          //       width: MediaQuery.of(context).size.width,
+          //       child: FloatingActionButton(onPressed: () {
+          //         setState(() {
+          //           // (context as Element).reassemble();
+          //           Navigator.pushReplacement(context,
+          //               MaterialPageRoute(builder: (context) => HomePage()));
+          //         });
+          //       }),
+          //     ),
+          //   ),
+          // ),
+          
+          //! this is for testing
+          // Positioned(
+          //   bottom: 185,
+          //   child: Center(
+          //     child: GestureDetector(
+          //       onTap: () => Navigator.pop(context),
+          //       child: Container(
+          //         color: Colors.red,
+          //         height: 25,
+          //         width: MediaQuery.of(context).size.width,
+          //         child: null,
+          //       ),
+          //     ),
+          //   ),
+          // )
         ],
       ),
     );
