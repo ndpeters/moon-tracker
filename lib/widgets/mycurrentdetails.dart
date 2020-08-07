@@ -27,8 +27,9 @@ class CurrentDetails extends StatelessWidget {
                 backgroundColor: Colors.white.withAlpha(105),
                 child: Container(child: Icon(Icons.refresh),),
                 onPressed: (){
-                    Navigator.pushReplacement(context,
-                        MaterialPageRoute(builder: (context) => HomePage()));
+                    // Navigator.pushReplacement(context,
+                    //     MaterialPageRoute(builder: (context) => HomePage()));
+                    Navigator.of(context).pushReplacement(_createRoute());
                 },
               ),
             ),
@@ -37,4 +38,12 @@ class CurrentDetails extends StatelessWidget {
       ],
     );
   }
+}
+Route _createRoute() {
+  return PageRouteBuilder(
+    pageBuilder: (context, animation, secondaryAnimation) => HomePage(),
+    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+      return child;
+    },
+  );
 }
