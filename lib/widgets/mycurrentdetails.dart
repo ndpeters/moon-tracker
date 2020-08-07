@@ -11,16 +11,15 @@ class CurrentDetails extends StatelessWidget {
       children: <Widget>[
         /// current day and time
         /// STFL
-        MyClock(),
 
         /// current temperature
-
-        // MyLocation(),
-        Stack(
-          children: [
-            MyLocation(),
-            Positioned(
-              top: 95,
+        Container(
+          width: MediaQuery.of(context).size.width,
+          child: Stack(
+            children: <Widget>[
+              MyClock(),
+               Positioned(
+              right: 0,
               left: MediaQuery.of(context).size.width - 105,
               child: FloatingActionButton(
                 foregroundColor: Colors.black,
@@ -33,8 +32,30 @@ class CurrentDetails extends StatelessWidget {
                 },
               ),
             ),
-          ],
-        )
+            ],
+          ),
+        ),
+
+        MyLocation(),
+        // // Stack(
+        // //   children: [
+        // //     MyLocation(),
+        // //     Positioned(
+        // //       top: 95,
+        // //       left: MediaQuery.of(context).size.width - 105,
+        // //       child: FloatingActionButton(
+        // //         foregroundColor: Colors.black,
+        // //         backgroundColor: Colors.white.withAlpha(105),
+        // //         child: Container(child: Icon(Icons.refresh),),
+        // //         onPressed: (){
+        // //             // Navigator.pushReplacement(context,
+        // //             //     MaterialPageRoute(builder: (context) => HomePage()));
+        // //             Navigator.of(context).pushReplacement(_createRoute());
+        // //         },
+        // //       ),
+        // //     ),
+        // //   ],
+        // // )
       ],
     );
   }
