@@ -134,6 +134,7 @@ String url = 'http://newsapi.org/v2/top-headlines?country=ca&category=business&a
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Container(
+                                width: 118,
                                 child: Text('${articles[widget.i]['title'].toString().substring(0, 13).trim()}...',
                                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
                               ),
@@ -142,6 +143,8 @@ String url = 'http://newsapi.org/v2/top-headlines?country=ca&category=business&a
                                 child: articles[widget.i]['author'].toString().length >15 ? 
                                 Text('${articles[widget.i]['author'].toString().substring(0, 15)}...',
                                     style: TextStyle(fontSize: 12)):
+                                    articles[widget.i]['author'] == null ? Text('Anonymous',
+                                    style: TextStyle(fontSize: 12, fontStyle: FontStyle.italic, fontWeight: FontWeight.w300)):
                                     Text('${articles[widget.i]['author'].toString().substring(0)}...',
                                     style: TextStyle(fontSize: 12)),
                               ),
