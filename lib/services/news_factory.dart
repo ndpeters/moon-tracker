@@ -77,7 +77,7 @@ class NewsFactory {
         'img': jsonDecode(data)['articles'][3]['urlToImage'],
         'url': jsonDecode(data)['articles'][3]['url']
       };
-// print(object);
+print(object);
       // return jsonDecode(data);
       // print(jsonDecode(data)['articles'][0]['author']);
       // print(jsonDecode(data)['articles'][2]['title']);
