@@ -33,6 +33,7 @@ dependencies:
   geocoder: ^0.2.1
   weather: ^1.2.2
   weather_icons: ^2.0.1
+  http: ^0.12.2
   
 dev_dependencies:
   flutter_test:

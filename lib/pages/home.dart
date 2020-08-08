@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:moon_tracker/pages/friends.dart';
 import 'package:moon_tracker/pages/messages.dart';
 import 'package:moon_tracker/pages/news.dart';
-import 'package:moon_tracker/widgets/myappbar.dart';
-import 'package:moon_tracker/widgets/mynav.dart';
+import 'package:moon_tracker/widgets/my_appbar.dart';
+import 'package:moon_tracker/widgets/my_nav.dart';
 import 'package:moon_tracker/shared/constants.dart' as Constants;
 
 class HomePage extends StatefulWidget {

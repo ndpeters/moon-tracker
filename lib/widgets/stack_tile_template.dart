@@ -27,27 +27,25 @@ class StackTileTemplate extends StatelessWidget {
             Container(
               height: (containerHeight + ((2 * cardAmount) * 2)),
               width: cardWidth,
-              child: SingleChildScrollView(
-                child: Column(
-                  children: <Widget>[
-                    for (var i = 0; i < cardAmount; i++)
-                      Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 2.0),
-                        child: Container(
-                          height: cardHeight,
-                          width: cardWidth,
-                          decoration: BoxDecoration(
-                            border: Border.all(),
-                            borderRadius: new BorderRadius.all(Radius.circular(15.0)),
-                            color: Colors.white.withOpacity(.30)),
-                          child: Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: content,
-                          ),
+              child: Column(
+                children: <Widget>[
+                  for (var i = 0; i < cardAmount; i++)
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 2.0),
+                      child: Container(
+                        height: cardHeight,
+                        width: cardWidth,
+                        decoration: BoxDecoration(
+                          border: Border.all(),
+                          borderRadius: new BorderRadius.all(Radius.circular(15.0)),
+                          color: Colors.white.withOpacity(.30)),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: content,
                         ),
                       ),
-                  ],
-                ),
+                    ),
+                ],
               ),
             ),
           ],

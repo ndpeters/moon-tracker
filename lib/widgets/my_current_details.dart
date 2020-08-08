@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:moon_tracker/pages/home.dart';
-import 'package:moon_tracker/widgets/locationweather.dart';
-import 'package:moon_tracker/widgets/timeandday.dart';
+import 'package:moon_tracker/widgets/location_weather.dart';
+import 'package:moon_tracker/widgets/time_day.dart';
 
 class CurrentDetails extends StatelessWidget {
   @override
